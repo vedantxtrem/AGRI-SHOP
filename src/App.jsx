@@ -1,0 +1,57 @@
+import React from 'react';
+import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
+
+import ShopHeader from './shop/ShopHeader';
+import ShopNav from './shop/ShopNav';
+import Shopbox from './shop/Shopbox';
+import ProductCarousel from './shop/ProductCarousel';
+import Category from './shop/Category';
+import PromoSection from './shop/PromoSection';
+import ProductCard from './shop/ProductCard';
+import ShopFooter from './shop/ShopFooter';
+import ShopAbout from './shop/ShopAbout';
+import Cart from './shop/Cart';
+import Wishlist from './shop/Wishlist';
+import Contact from './shop/Contact';
+import Account from './shop/Account'
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path='/Cart' element={<Cart />} />
+        </Routes>
+        <Routes>
+          <Route path='/wishlist' element={<Wishlist />} />
+        </Routes>
+        <Routes>
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+        <Routes>
+          <Route path='/Account' element={<Account/>} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<ShopHeader />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<ShopNav />} />
+        </Routes>
+        
+
+        <ProductCarousel />
+        <Shopbox />
+        <Category />
+        <PromoSection />
+        <ProductCard />
+        <ShopAbout />
+        <ShopFooter />
+      </Router>
+
+
+
+    </>
+  );
+}
+
+export default App;
