@@ -1,15 +1,10 @@
 import React from 'react';
-import ShopNav from './ShopNav';
-import ShopHeader from './ShopHeader';
-import ShopAbout from './ShopAbout';
-import ShopFooter from './ShopFooter';
+
 
 function Cart() {
     return (
         <>
-            <ShopHeader/>
-            <ShopNav/>
-
+            
         <section className='md:flex mt-10'>
             <section className=" w-full md:h-[600px] md:w-full md:max-w-[1200px] md:grid-cols-1 gap-3 px-5 pb-10 md:grid">
                 <table className="table-fixed">
@@ -25,7 +20,7 @@ function Cart() {
                     <tbody>
                         {/* Item 1 */}
                         <tr className="h-[100px] border-b">
-                            {/* ... Item 2 contents */}
+                            {/* ... Item 2 content */}
                         </tr>
                         
                         {/* Item 2 */}
@@ -74,8 +69,7 @@ function Cart() {
                 </div>
             </section>
         </section>
-        <ShopAbout/>
-        <ShopFooter />
+        
         </>
     );
 }

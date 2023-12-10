@@ -19,6 +19,8 @@ function App() {
   return (
     <>
       <Router>
+      <ShopHeader />
+      <ShopNav />
         <Routes>
           <Route path='/Cart' element={<Cart />} />
         </Routes>
@@ -31,19 +33,23 @@ function App() {
         <Routes>
           <Route path='/Account' element={<Account/>} />
         </Routes>
+       
         <Routes>
-          <Route path='/' element={<ShopHeader />} />
+          <Route path='/' element={<ProductCarousel />} />
         </Routes>
         <Routes>
-          <Route path='/' element={<ShopNav />} />
+          <Route path='/' element={<Shopbox />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<Category />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<PromoSection />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<ProductCard />} />
         </Routes>
         
-
-        <ProductCarousel />
-        <Shopbox />
-        <Category />
-        <PromoSection />
-        <ProductCard />
         <ShopAbout />
         <ShopFooter />
       </Router>
