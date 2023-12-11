@@ -15,6 +15,7 @@ import Wishlist from './shop/Wishlist';
 import Contact from './shop/Contact';
 import Account from './shop/Account'
 import Productoverview from './shop/Product-overview'
+import CropRecommendationForm from './shop/CropR';
 
 function App() {
   return (
@@ -38,7 +39,13 @@ function App() {
         <Routes>
           <Route path='/Productoverview' element={<Productoverview/>} />
         </Routes>
-       
+
+        <Routes>
+          <Route path='/Croprecomendation' element={<CropRecommendationForm/>} />
+        </Routes>
+        
+
+
         <Routes>
           <Route path='/' element={<ProductCarousel />} />
         </Routes>
