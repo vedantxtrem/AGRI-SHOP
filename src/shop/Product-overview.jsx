@@ -36,7 +36,7 @@ function ImageGallery() {
 function Description() {
   return (
     <div className="mx-auto px-5 lg:px-5">
-      <h2 className="pt-3 text-2xl font-bold lg:pt-0">BIG ITALIAN SOFA</h2>
+      <h2 className="pt-3 text-2xl font-bold lg:pt-0">Product Name</h2>
       <div className="mt-1">
         <div className="flex items-center">
           <svg
@@ -61,14 +61,14 @@ function Description() {
         Brand: <span className="font-normal">Apex</span>
       </p>
       <p className="font-bold">
-        Category: <span className="font-normal">Sofa</span>
+        Category: <span className="font-normal">Seeds</span>
       </p>
       <p className="font-bold">
         SKU: <span className="font-normal">BE45VGTRK</span>
       </p>
 
       <p className="mt-4 text-4xl font-bold text-violet-900">
-        $450 <span className="text-xs text-gray-400 line-through">$550</span>
+        &#8377;450 <span className="text-xs text-gray-400 line-through">&#8377;550</span>
       </p>
 
       <p className="pt-5 text-sm leading-5 text-gray-500">
