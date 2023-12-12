@@ -27,8 +27,9 @@ function Cart() {
                                         src="./assets/images/product-chair.png"
                                         alt="Chair image"
                                     />
-                                    <div className="ml-3 flex w-full flex-col justify-center">
-                                        <div className="flex items-center justify-between">
+                                
+                                    <div className="ml-3 flex w-full justify-around">
+                                        <div className="flex items-center justify-around">
                                             <p className="text-xl font-bold">Seeds</p>
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +42,12 @@ function Cart() {
                                                 />
                                             </svg>
                                         </div>
+                                        <div>
                                         <p className="text-sm text-gray-400">Size: XL</p>
+                                        </div>
+                                        <div>
                                         <p className="py-3 text-xl font-bold text-violet-900">&#8377;320</p>
+                                        </div>
                                         <div className="mt-2 flex w-full items-center justify-between">
                                             <div className="flex items-center justify-center">
                                                 <button

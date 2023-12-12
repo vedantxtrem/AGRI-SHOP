@@ -16,6 +16,7 @@ import Contact from './shop/Contact';
 import Account from './shop/Account'
 import Productoverview from './shop/Product-overview'
 import CropRecommendationForm from './shop/CropR';
+import PestPrediction from './shop/PestPrediction';
 
 function App() {
   return (
@@ -42,6 +43,10 @@ function App() {
 
         <Routes>
           <Route path='/Croprecomendation' element={<CropRecommendationForm/>} />
+        </Routes>
+
+        <Routes>
+          <Route path='/Pestprediction' element={<PestPrediction/>} />
         </Routes>
         
 
