@@ -18,7 +18,7 @@ function AddressForm() {
               <th className="bg-neutral-600 text-white"><Link to = "/Address">ADDRESS</Link></th>
                 <th><Link to="/DeliveryOptions"> DELIVERY METHOD</Link></th>
                 <th ><Link to ="/Payment"> PAYMENT METHOD</Link></th>
-                <th>ORDER REVIEW</th>
+                
               </tr>
             </thead>
           </table>
