@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function PaymentForm() {
   return (
@@ -11,9 +13,9 @@ function PaymentForm() {
           <table className="hidden lg:table">
             <thead className="h-16 bg-neutral-100">
               <tr>
-                <th>ADDRESS</th>
+                <th><Link to = "/Address">ADDRESS</Link></th>
                 <th>DELIVERY METHOD</th>
-                <th className="bg-neutral-600 text-white">PAYMENT METHOD</th>
+                <th className="bg-neutral-600 text-white"><Link to ="/Payment"> PAYMENT METHOD</Link></th>
                 <th>ORDER REVIEW</th>
               </tr>
             </thead>
