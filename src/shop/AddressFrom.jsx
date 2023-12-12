@@ -16,7 +16,7 @@ function AddressForm() {
             <thead className="h-16 bg-neutral-100">
               <tr>
               <th className="bg-neutral-600 text-white"><Link to = "/Address">ADDRESS</Link></th>
-                <th>DELIVERY METHOD</th>
+                <th><Link to="/DeliveryOptions"> DELIVERY METHOD</Link></th>
                 <th ><Link to ="/Payment"> PAYMENT METHOD</Link></th>
                 <th>ORDER REVIEW</th>
               </tr>
@@ -101,9 +101,9 @@ function AddressForm() {
             <a href="catalog.html" className="text-sm text-violet-900">
               &larr; Back to the shop
             </a>
-            <a href="checkout-delivery.html" className="bg-amber-400 px-4 py-2">
+            <Link to="/DeliveryOptions" className="bg-amber-400 px-4 py-2">
               Place an order
-            </a>
+            </Link>
           </div>
         </section>
       </section>

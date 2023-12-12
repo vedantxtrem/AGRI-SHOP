@@ -14,7 +14,7 @@ function PaymentForm() {
             <thead className="h-16 bg-neutral-100">
               <tr>
                 <th><Link to = "/Address">ADDRESS</Link></th>
-                <th>DELIVERY METHOD</th>
+                <th><Link to="/DeliveryOptions"> DELIVERY METHOD</Link></th>
                 <th className="bg-neutral-600 text-white"><Link to ="/Payment"> PAYMENT METHOD</Link></th>
                 <th>ORDER REVIEW</th>
               </tr>
@@ -118,9 +118,9 @@ function PaymentForm() {
             </a>
 
             <div className="mx-auto flex justify-center gap-2 lg:mx-0">
-              <a href="checkout-delivery.html" className="bg-purple-900 px-4 py-2 text-white">
+              <Link to="/DeliveryOPtions" className="bg-purple-900 px-4 py-2 text-white">
                 Previous step
-              </a>
+              </Link>
 
               <a href="checkout-review.html" className="bg-amber-400 px-4 py-2">
                 Checkout review

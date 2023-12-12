@@ -19,6 +19,8 @@ import CropRecommendationForm from './shop/CropR';
 import PestPrediction from './shop/PestPrediction';
 import PaymentForm from './shop/Paymentfrom';
 import AddressForm from './shop/AddressFrom';
+import OrderConfirmation from './shop/OrderConfirmation';
+import DeliveryOptions from './shop/DeliveryOptions';
 
 function App() {
   return (
@@ -50,11 +52,20 @@ function App() {
         <Routes>
           <Route path='/Pestprediction' element={<PestPrediction/>} />
         </Routes>
+
         <Routes>
           <Route path='/Address' element={<AddressForm/>} />
         </Routes>
+
         <Routes>
           <Route path='/Payment' element={<PaymentForm/>} />
+        </Routes>
+
+        <Routes>
+          <Route path='/OrderConfirmation' element={<OrderConfirmation/>} />
+        </Routes>
+        <Routes>
+          <Route path='/DeliveryOptions' element={<DeliveryOptions/>} />
         </Routes>
 
         <Routes>

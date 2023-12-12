@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ProfilePage() {
     return (
@@ -55,12 +56,12 @@ function ProfilePage() {
                 <div className="flex border-b py-5">
                     <div className="flex w-full">
                         <div className="flex flex-col gap-2">
-                            <a href="payment-methods.html" className="flex items-center gap-2 font-medium active:text-violet-900">
+                            <Link to="/Payment" className="flex items-center gap-2 font-medium active:text-violet-900">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="h-5 w-5">
                                     {/* SVG path */}
                                 </svg>
                                 Payment Methods
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -126,7 +127,8 @@ function ProfilePage() {
                             <div className="border py-5 shadow-md">
                                 <div className="flex justify-between px-4 pb-5">
                                     <p className="font-bold">Personal Profile</p>
-                                    <a className="text-sm text-violet-900" href="profile-information.html">Edit</a>
+                                    <Link className="text-sm text-violet-900" to="/Address">Edit</Link>
+
                                 </div>
 
                                 <div className="px-4">
@@ -142,7 +144,8 @@ function ProfilePage() {
                             <div className="border py-5 shadow-md">
                                 <div className="flex justify-between px-4 pb-5">
                                     <p className="font-bold">Shipping Address</p>
-                                    <a className="text-sm text-violet-900" href="manage-address.html">Edit</a>
+                                    <Link className="text-sm text-violet-900" to="/Address">Edit</Link>
+
                                 </div>
 
                                 <div className="px-4">
@@ -158,7 +161,7 @@ function ProfilePage() {
                             <div className="border py-5 shadow-md">
                                 <div className="flex justify-between px-4 pb-5">
                                     <p className="font-bold">Billing Address</p>
-                                    <a className="text-sm text-violet-900" href="#">Edit</a>
+                                    <Link className="text-sm text-violet-900" to="/Address">Edit</Link>
                                 </div>
 
                                 <div className="px-4">
