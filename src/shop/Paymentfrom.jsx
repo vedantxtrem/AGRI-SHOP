@@ -113,12 +113,12 @@ function PaymentForm() {
           </div>
 
           <div className="flex w-full items-center justify-between">
-            <a href="catalog.html" className="hidden text-sm text-violet-900 lg:block">
+            <a href="catalog.html" className="hidden text-sm text-teal-800 lg:block">
               &larr; Back to the shop
             </a>
 
             <div className="mx-auto flex justify-center gap-2 lg:mx-0">
-              <Link to="/DeliveryOPtions" className="bg-purple-900 px-4 py-2 text-white">
+              <Link to="/DeliveryOPtions" className="bg-teal-800 px-4 py-2 text-white">
                 Previous step
               </Link>
 

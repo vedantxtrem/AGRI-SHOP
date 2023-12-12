@@ -33,7 +33,7 @@ function DeliveryOptions() {
                   <p className="ml-3 font-bold">DHL, next day</p>
                 </div>
                 <div className="px-4 py-3">
-                  <p className="pb-3 font-bold text-violet-900">FREE</p>
+                  <p className="pb-3 font-bold text-teal-800">FREE</p>
                   <p className="text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla dolorum obcaecati, sequi, quidem quo eligendi soluta modi accusamus esse explicabo exercitationem!
                   </p>
@@ -47,7 +47,7 @@ function DeliveryOptions() {
                   <p className="ml-3 cursor-pointer font-bold">SDEK, 3 hours</p>
                 </div>
                 <div className="px-4 py-3">
-                  <p className="pb-3 font-bold text-violet-900">&dollar;300</p>
+                  <p className="pb-3 font-bold text-teal-800">&dollar;300</p>
                   <p className="text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla dolorum obcaecati, sequi, quidem quo eligendi soluta modi accusamus esse explicabo exercitationem!
                   </p>
@@ -61,11 +61,11 @@ function DeliveryOptions() {
         </div>
 
         <div className="flex w-full items-center justify-between">
-          <a href="catalog.html" className="hidden text-sm text-violet-900 lg:block">
+          <a href="catalog.html" className="hidden text-sm text-teal-800 lg:block">
             &larr; Back to the shop
           </a>
           <div className="mx-auto flex justify-center gap-2 lg:mx-0">
-            <Link to="/Address" className="bg-purple-900 px-4 py-2 text-white">
+            <Link to="/Address" className="bg-teal-800 px-4 py-2 text-white">
               Previous step
             </Link>
             <Link to="/Payment" className="bg-amber-400 px-4 py-2">

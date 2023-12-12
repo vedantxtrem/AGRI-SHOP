@@ -98,7 +98,7 @@ function AddressForm() {
 
           {/* Back to the shop and Place an order */}
           <div className="flex w-full items-center justify-between">
-            <a href="catalog.html" className="text-sm text-violet-900">
+            <a href="catalog.html" className="text-sm text-teal-800">
               &larr; Back to the shop
             </a>
             <Link to="/DeliveryOptions" className="bg-amber-400 px-4 py-2">

@@ -21,6 +21,7 @@ import PaymentForm from './shop/Paymentfrom';
 import AddressForm from './shop/AddressFrom';
 import OrderConfirmation from './shop/OrderConfirmation';
 import DeliveryOptions from './shop/DeliveryOptions';
+import Search from './shop/Search';
 
 function App() {
   return (
@@ -66,6 +67,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path='/DeliveryOptions' element={<DeliveryOptions/>} />
+        </Routes>
+        <Routes>
+          <Route path='/Search' element={<Search/>} />
         </Routes>
 
         <Routes>
