@@ -17,6 +17,7 @@ import Account from './shop/Account'
 import Productoverview from './shop/Product-overview'
 import CropRecommendationForm from './shop/CropR';
 import PestPrediction from './shop/PestPrediction';
+import PaymentMethod from './shop/Paymentfrom'
 
 function App() {
   return (
@@ -48,7 +49,9 @@ function App() {
         <Routes>
           <Route path='/Pestprediction' element={<PestPrediction/>} />
         </Routes>
-        
+        <Routes>
+          <Route path='/Payment' element={<PaymentMethod/>} />
+        </Routes>
 
 
         <Routes>
