@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
 
+import Home from './Home';
 import ShopHeader from './shop/ShopHeader';
 import ShopNav from './shop/ShopNav';
 import Shopbox from './shop/Shopbox';
@@ -22,12 +23,14 @@ import AddressForm from './shop/AddressFrom';
 import OrderConfirmation from './shop/OrderConfirmation';
 import DeliveryOptions from './shop/DeliveryOptions';
 import Search from './shop/Search';
+import Weather from './Weather';
+
 
 function App() {
   return (
     <>
       <Router>
-      <ShopHeader />
+      {/* <ShopHeader />
       <ShopNav />
         <Routes>
           <Route path='/Cart' element={<Cart />} />
@@ -89,7 +92,10 @@ function App() {
         </Routes>
         
         <ShopAbout />
-        <ShopFooter />
+        <ShopFooter /> */}
+        {/* <Home/> */}
+        <Weather/>
+        
       </Router>
 
 
