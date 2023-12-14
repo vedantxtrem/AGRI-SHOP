@@ -19,7 +19,7 @@ const WeatherApp = () => {
                 <div class="flex mt-1 justify-between items-center  sm:w-full md:flex md:mt-1 md:w-1/2 ">
 
                     <div class=" flex my-4 text-center   md:w-44 sm:w-1/2  px-3 ">
-                        <img src={weathericon} class=" " alt="weather icon "/>
+                        <img src={weathericon}  alt="weather icon "/>
                     </div>
 
                     <div class=" flex-grow text-center sm:w-1/2 sm:text-center px-3 ">

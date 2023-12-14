@@ -24,7 +24,8 @@ import OrderConfirmation from './shop/OrderConfirmation';
 import DeliveryOptions from './shop/DeliveryOptions';
 import Search from './shop/Search';
 import Weather from './Weather';
-
+import Navbar from './Navbar';
+import PackageStatus from './shop/PackageStatus';
 
 function App() {
   return (
@@ -94,7 +95,9 @@ function App() {
         <ShopAbout />
         <ShopFooter /> */}
         {/* <Home/> */}
-        <Weather/>
+        {/* <Weather/> */}
+        {/* <Navbar/> */}
+        <PackageStatus/>
         
       </Router>
 
