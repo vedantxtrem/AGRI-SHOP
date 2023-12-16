@@ -88,17 +88,17 @@ function Navbar() {
                 <div class="-my-6 divide-y divide-gray-500/10">
 
                   <div class="space-y-2 py-6">
-                    <Link to="#"
+                    <Link to="/Weather"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Weather</Link>
-                    <Link to="#"
+                    <Link to="/Croprecomendation"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Crop Recommendation</Link>
-                    <Link to="#"
+                    <Link to="/Pestprediction"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Pest Information</Link>
                     <Link to="#"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Fertilizer Recommendation</Link>
                     <Link to="#"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Shop</Link>
-                    <Link to="#"
+                    <Link to="/Chat"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Chat</Link>
                     <Link to="#"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Feedback</Link>

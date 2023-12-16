@@ -31,7 +31,9 @@ function App() {
   return (
     <>
       <Router>
-      {/* <ShopHeader />
+      <Navbar/>
+      
+      <ShopHeader />
       <ShopNav />
         <Routes>
           <Route path='/Cart' element={<Cart />} />
@@ -65,6 +67,9 @@ function App() {
         <Routes>
           <Route path='/Payment' element={<PaymentForm/>} />
         </Routes>
+        <Routes>
+          <Route path='/Weather' element={<Weather/>} />
+        </Routes>
 
         <Routes>
           <Route path='/OrderConfirmation' element={<OrderConfirmation/>} />
@@ -74,6 +79,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path='/Search' element={<Search/>} />
+        </Routes>
+        <Routes>
+          <Route path='/Chat' element={<Chat/>} />
         </Routes>
 
         <Routes>
@@ -93,11 +101,8 @@ function App() {
         </Routes>
         
         <ShopAbout />
-        <ShopFooter /> */}
-        {/* <Weather/> */}
-        {/* <Navbar/> */}
-        <Chat/>
-        {/* <PackageStatus/> */}
+        <ShopFooter /> 
+        
         
       </Router>
 
