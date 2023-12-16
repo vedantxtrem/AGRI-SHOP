@@ -24,17 +24,14 @@ import DeliveryOptions from './shop/DeliveryOptions';
 import Search from './shop/Search';
 import Weather from './Weather';
 import Navbar from './Navbar';
-import PackageStatus from './shop/PackageStatus';
 import Chat from './Chat';
+import Body from './Body';
 
 function App() {
   return (
     <>
       <Router>
-      <Navbar/>
-      
-      <ShopHeader />
-      <ShopNav />
+        <Navbar/>
         <Routes>
           <Route path='/Cart' element={<Cart />} />
         </Routes>
@@ -83,26 +80,12 @@ function App() {
         <Routes>
           <Route path='/Chat' element={<Chat/>} />
         </Routes>
-
+        
         <Routes>
-          <Route path='/' element={<ProductCarousel />} />
-        </Routes>
-        <Routes>
-          <Route path='/' element={<Shopbox />} />
-        </Routes>
-        <Routes>
-          <Route path='/' element={<Category />} />
-        </Routes>
-        <Routes>
-          <Route path='/' element={<PromoSection />} />
-        </Routes>
-        <Routes>
-          <Route path='/' element={<ProductCard />} />
+          <Route path='/' element={<Body/>} />
         </Routes>
         
-        <ShopAbout />
         <ShopFooter /> 
-        
         
       </Router>
 

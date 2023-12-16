@@ -35,9 +35,9 @@ function Navbar() {
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-6 text-white">
-            <Link href="#"
+            <Link href="/Weather"
               class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Weather</Link>
-            <Link href="#"
+            <Link href="/Croprecomendation"
               class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Crop Recomendation</Link>
             <Link href="#"
               class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Pest Information</Link>
@@ -96,7 +96,7 @@ function Navbar() {
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Pest Information</Link>
                     <Link to="#"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Fertilizer Recommendation</Link>
-                    <Link to="#"
+                    <Link to="/Shop"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Shop</Link>
                     <Link to="/Chat"
                       class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Chat</Link>
@@ -120,12 +120,7 @@ function Navbar() {
           </div>
         </dialog>
       </header>
-      <div class="h-screen w-full sm:textx-xm md:text-2xl flex justify-center items-center">
-        <div className='flex-col text-center'>
-          <h2>Revolutionizing Farming With Innovative Technology Solutions</h2>
-          <h2>A Helping Hand For Farmers  &#127995</h2>
-        </div>
-      </div>
+     
     </section>
   );
 }
