@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
 
-import Home from './Home';
 import ShopHeader from './shop/ShopHeader';
 import ShopNav from './shop/ShopNav';
 import Shopbox from './shop/Shopbox';
@@ -94,10 +93,9 @@ function App() {
         
         <ShopAbout />
         <ShopFooter /> */}
-        {/* <Home/> */}
         {/* <Weather/> */}
-        {/* <Navbar/> */}
-        <PackageStatus/>
+        <Navbar/>
+        {/* <PackageStatus/> */}
         
       </Router>
 

@@ -1,73 +1,132 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
- function Navbar() {
+function Navbar() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickToOpen = () => {
+    setOpen(true);
+  };
+
+  const handleToClose = () => {
+    setOpen(false);
+  };
   return (
-    <nav className='mx-auto flex items-center border-b-2 px-6 py-2 h-16 bg-pink-500 text-white'>
-      <h1 className="font-bold text-xl">Programming</h1>
-      <div className="grow">
-        <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
-          <Link href="#">Home</Link>
-          <Link href="#">Blog</Link>
-          <Link href="#">Shop</Link>
-          <Link href="#">About</Link>
-          <Link href="#">Contact</Link>
-        </div>
+    <section>
+      <header class=" bg-green-500 m-2 rounded-full  absolute inset-x-0 top-0 z-50">
 
-        <div className="flex grow items-center justify-end sm:hidden">
-          <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
-            <span className="sr-only">Open menu</span>
-            <Bars3Icon className='h-6 w-6' aria-hidden='true' />
-          </Popover.Button>
-        </div>
-        <Popover.Overlay className='sm:hidden fixed inset-0 bg-black opacity-30' />
-        <Transition
-          as={Fragment}
-          enter=' duration-200 ease-out '
-          enterFrom=' opacity-0 scale-95 '
-          enterTo=' opacity-100 scale-100 '
-          leave=' duration-100 ease-in'
-          leaveFrom='duration-100 scale-100  '
-          leaveTo=' opacity-0 scale-95 '
-        >
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global drop-shadow-2xl">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 flex ">
+              <span class="sr-only">Vedant</span>
+              <img class="h-8 w-auto" src="" alt="" />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" onClick={handleClickToOpen}
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-6 text-white">
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Weather</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Crop Recomendation</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Pest Information</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Fertilizer Recomendation</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Shop</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Chat</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Govt.Scheme</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">Feedback</Link>
+            <Link href="#"
+              class="text-xm font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:border-b-4 hover:border-green-700 text-center">About Us</Link>
 
-          <Popover.Panel className='absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden'>
-            <div className="rounded-lg bg-pink-500 shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50">
-              <div className="px-5 pt-5 pb-6">
-                <div className="flex items-center justify-between">
-                  <h1 className='font-bold'>Programming</h1>
-                  <div className="mr-2">
-                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
-                      <span className="sr-only">Close menu</span>
-                      <XMarkIcon className='h-6 w-6' aria-hidden='true' />
-                    </Popover.Button>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#"
+              class="text-xl font-semibold leading-6 px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 text-white">Log
+              in <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </nav>
+
+
+        <dialog open={open} onClose={handleToClose}>
+          <div class="" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50"></div>
+            <div
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-green-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">AGRI-HELP</span>
+                  <img class="h-8 w-auto" src="" alt="" />
+                </a>
+
+                <button onClick={handleToClose} type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+
+              </div>
+
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+
+                  <div class="space-y-2 py-6">
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Weather</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Crop Recommendation</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Pest Information</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Fertilizer Recommendation</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Shop</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Chat</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Feedback</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">About</Link>
+
                   </div>
-                </div>
-                <div className="mt-6">
-                  <nav className='grid gap-y-8 '>
-                    <Link href="#" className='focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2'>Home</Link>
-                    <Link href="#" className='focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2'>Blog</Link>
-                    <Link href="#" className='focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2'>Shop</Link>
-                    <Link href="#" className='focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2'>About</Link>
-                    <Link href="#" className='focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2'>Contact</Link>
-                  </nav>
-                </div>
-                <div className="mt-6 flex flex-col items-center gap-2">
-                  <Link href="#" className='rounded-md bg-gray-500 px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2 focus:outline-none focus:ring-2  focus:ring-inset focus:ring-gray-500'>Sign up</Link>
-                  <Link href="#" className='rounded-md bg-gray-500 px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2 focus:outline-none focus:ring-2  focus:ring-inset focus:ring-gray-500'>Login</Link>
+
+                  <div class="py-6">
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Log in</Link>
+                    <Link to="#"
+                      class="block h-14 text-center rounded-lg px-3 pt-4  font-semibold leading-7  text-gray-900 hover:bg-white ">Sign Up</Link>
+                  </div>
+
                 </div>
               </div>
             </div>
-          </Popover.Panel>
-        </Transition>
-
+          </div>
+        </dialog>
+      </header>
+      <div class="h-screen w-full sm:textx-xm md:text-2xl flex justify-center items-center">
+        <div className='flex-col text-center'>
+          <h2>Revolutionizing Farming With Innovative Technology Solutions</h2>
+          <h2>A Helping Hand For Farmers  &#127995</h2>
+        </div>
       </div>
-
-      <div className="hidden sm:block">
-        <Link href="#" className='mr-2 font-bold'>Sign up</Link>
-        <Link href="#" className='font-bold'>Login</Link>
-      </div>
-    </nav>
+    </section>
   );
 }
 export default Navbar;
