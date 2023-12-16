@@ -25,6 +25,7 @@ import Search from './shop/Search';
 import Weather from './Weather';
 import Navbar from './Navbar';
 import PackageStatus from './shop/PackageStatus';
+import Chat from './Chat';
 
 function App() {
   return (
@@ -94,7 +95,8 @@ function App() {
         <ShopAbout />
         <ShopFooter /> */}
         {/* <Weather/> */}
-        <Navbar/>
+        {/* <Navbar/> */}
+        <Chat/>
         {/* <PackageStatus/> */}
         
       </Router>
