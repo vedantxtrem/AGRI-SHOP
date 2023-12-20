@@ -171,7 +171,41 @@ function Navbar() {
             </div>
           </div>
         </dialog>
+        {/* features box */}
+        <dialog open={open}>
+          <div class="w-48 fixed top-20 z-50  text-xm font-bold text-white bg-green-400 border-2 border-green-200 rounded-lg ">
 
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Weather
+            </button>
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Crop Recommendation
+            </button>
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Pest Information
+            </button>
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Fertilizer Recommendation
+            </button>
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Chat
+            </button>
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Finance
+            </button>
+            <button type="button"
+              class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b border-green-200 cursor-pointer hover:bg-green-100 rounded-lg dark:hover:bg-green-600 dark:hover:text-white ">
+              Process
+            </button>
+
+          </div>
+        </dialog>
       </header>
 
     </section>
