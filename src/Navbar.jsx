@@ -180,7 +180,7 @@ function Navbar() {
         </dialog>
         {/* features box */}
         <dialog open={fopen} onClose={()=> setfOpen(false)} >
-          <div class="hidden lg:block w-48 fixed top-16 left-[38%]   text-xm font-bold text-white bg-green-400 border-2 border-green-400 rounded-lg ">
+          <div class="hidden lg:block w-48 fixed top-16 left-[38%]   text-xm font-bold text-white bg-green-500  ">
 
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
