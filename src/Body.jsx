@@ -3,9 +3,9 @@ import React from "react";
 
 function Body() {
   return (
-    <div class="h-screen w-full sm:textx-xm md:text-2xl flex justify-center items-center ">
+    <div class="h-screen w-full sm:textx-xm md:text-2xl  ">
 
-      <div className=' fixed top-[50%] left-[25%]  text-center z-40 font-bold text-white text-3xl font-serif '>
+      <div className=' fixed top-[50%]  lg:top-[50%]  w-full text-center z-40 font-bold text-white lg:text-3xl font-serif '>
         <h2 className="drop-shadow-[0_10px_5px_#1e1e1e]">Revolutionizing Farming With Innovative Technology Solutions</h2>
         <h2 className="drop-shadow-[0_10px_5px_#1e1e1e]">A Helping Hand For Farmers 🙏 </h2>
       </div>
