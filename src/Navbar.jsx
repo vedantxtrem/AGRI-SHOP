@@ -184,31 +184,31 @@ function Navbar() {
 
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Weather
+              <Link to="/Weather">Weather</Link>
             </button>
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Crop Recommendation
+              <Link to="/Croprecomendation">Crop Recommendation</Link>
             </button>
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Pest Information
+              <Link to="">Pest Information</Link>
             </button>
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Fertilizer Recommendation
+              <Link to="">Fertilizer Recommendation</Link> 
             </button>
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Chat
+              <Link to="/Chat">Chat</Link>
             </button>
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Finance
+              <Link to="">Finance</Link>
             </button>
             <button type="button"
               class="w-full px-4 py-2 font-medium  text-center rtl:text-right border-b-2 border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
-              Process
+              <Link to="">Process</Link>
             </button>
             <button onClick={handleToClosef} type="button"
               class="w-full px-4 py-2 font-medium  text-xl text-center rtl:text-right  border-white cursor-pointer hover:bg-green-100 rounded-sm dark:hover:bg-green-600 dark:hover:text-white ">
